@@ -1,6 +1,9 @@
 # -*- coding: utf8 -*-
-quotes = ["Ecoutez-moi, Monsieur Shakespeare, nous avons beau être ou ne pas être, nous sommes !", 
-    "On doit pouvoir choisir entre s'écouter parler et se faire entendre."]
+
+quotes = [
+    "Ecoutez-moi, Monsieur Shakespeare, nous avons beau être ou ne pas être, nous sommes !",
+    "On doit pouvoir choisir entre s'écouter parler et se faire entendre."
+]
 
 characters = [
     "alvin et les Chipmunks", 
@@ -12,11 +15,26 @@ characters = [
     "Kirikou"
 ]
 
-# Show random quote
+def get_random_quote():
+   # get a random number
+   # get a quote from an array
+   # show the quote in the interpreter
+   pass
 
-if user_answer == "B": 
- pass
-elif user_answer == "C":
- print("C n'est pas la bonne réponse !")
-else : 
-# - show another quote
+def get_random_item_in(my_list):
+    # get a random number
+    item = my_list[0] # get a quote from a list
+    print(item) # show the quote in the interpreter
+    return "program is over" #returned value
+
+get_ramdom_quote()
+print(get_ramdom_item_in(quotes))
+
+user_answer = input('Tapez entrée pour découvrir une autre citation ou B pour quitter le programme.')
+#if user_answer == "B":
+#  pass
+#elif user_answer == "C":
+#  print("C n'est pas la bonne réponse !")
+#else :
+#  # - show another quote
+#  pass
