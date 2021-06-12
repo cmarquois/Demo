@@ -1,8 +1,6 @@
 # -*- coding: utf8 -*-
-quotes = [
-    "Ecoutez-moi, Monsieur Shakespeare, nous avons beau être ou ne pas être, nous sommes !", 
-    "On doit pouvoir choisir entre s'écouter parler et se faire entendre."
-]
+quotes = ["Ecoutez-moi, Monsieur Shakespeare, nous avons beau être ou ne pas être, nous sommes !", 
+    "On doit pouvoir choisir entre s'écouter parler et se faire entendre."]
 
 characters = [
     "alvin et les Chipmunks", 
@@ -14,3 +12,11 @@ characters = [
     "Kirikou"
 ]
 
+# Show random quote
+
+if user_answer == "B": 
+ pass
+elif user_answer == "C":
+ print("C n'est pas la bonne réponse !")
+else : 
+# - show another quote
