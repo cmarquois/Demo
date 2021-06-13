@@ -1,4 +1,5 @@
 # -*- coding: utf8 -*-
+import random
 
 quotes = [
     "Ecoutez-moi, Monsieur Shakespeare, nous avons beau être ou ne pas être, nous sommes !",
@@ -15,22 +16,29 @@ characters = [
     "Kirikou"
 ]
 
+def message(character, quote)
+   n_character = character.capitalize()
+   n_quote = quote.capitalize()
+   return "{} a dit : {}".format(n_character, n_quote)
+
 def get_random_quote():
-   # get a random number
-   # get a quote from an array
-   # show the quote in the interpreter
+   #get a random number
+   #get a quote from an array
+   #show the quote in the interpreter
    pass
 
 def get_random_item_in(my_list):
-    # get a random number
-    item = my_list[0] # get a quote from a list
-    print(item) # show the quote in the interpreter
-    return "program is over" #returned value
+    rand_numb = random.randint(0, len(my_list) - 1) # get a random number
+    item = my_list[rand_numb] # get a quote from a list
+    return item #returned the item
 
-get_ramdom_quote()
-print(get_ramdom_item_in(quotes))
-
+#Programm
 user_answer = input('Tapez entrée pour découvrir une autre citation ou B pour quitter le programme.')
+
+while user_answer != "B":
+    print(message(get_random_item_in(characters), get_random_item_in(quotes)))
+    user_answer = input('Tapez entrée pour connaître une autre citation ou B pour quitter le programme.')
+
 #if user_answer == "B":
 #  pass
 #elif user_answer == "C":
